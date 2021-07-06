@@ -7,5 +7,8 @@
 #
 4-Todos los datos que recibe la API son obligatorios sino se genera exepción.
 #
-5-En la prueba tecnica solo se exigia que el frontend buscara libros.
+5-En la prueba tecnica solo se exigia que el frontend buscara libros. 
+#
+6-En el archivo del BACKEND appsettings.json deben configurar el servidor de base de datos. [appsettings.json](https://github.com/andresiny98/nexosSoftware-project/blob/main/BACKEND/bibliotecaNexos/appsettings.json)
+#
 ![alt text](https://github.com/andresiny98/nexosSoftware-project/blob/main/Front.PNG)
