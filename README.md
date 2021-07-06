@@ -1,2 +1,2 @@
 # nexosSoftware-project
-![alt text](https://raw.githubusercontent.com/andresiny98/nexosSoftware-project/main/Front.png)
+![alt text](https://github.com/andresiny98/nexosSoftware-project/blob/main/Front.PNG)
