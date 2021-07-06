@@ -1,0 +1,46 @@
+-- -----------------------------------------------------
+-- Schema dbnexos
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema dbnexos
+-- -----------------------------------------------------
+CREATE DATABASE dbnexos;
+USE dbnexos;
+
+-- -----------------------------------------------------
+-- Table `dbnexos`.`EDITORIAL`
+-- -----------------------------------------------------
+CREATE TABLE EDITORIAL (
+  ID_EDITORIAL BIGINT NOT NULL PRIMARY KEY,
+  NOMBRE VARCHAR(45) NOT NULL,
+  DIRECCION_CORRESPONDENCIA VARCHAR(45) NOT NULL,
+  TELEFONO BIGINT NOT NULL,
+  CORREO_ELECTRONICO VARCHAR(45) NOT NULL,
+  MAXIMO_LIBROS INT NOT NULL
+);
+
+
+-- -----------------------------------------------------
+-- Table `dbnexos`.`AUTOR`
+-- -----------------------------------------------------
+CREATE TABLE AUTOR (
+  ID_AUTOR BIGINT NOT NULL PRIMARY KEY,
+  NOMBRE VARCHAR(45) NOT NULL,
+  FECHA_NACIMIENTO DATE NOT NULL,
+  CIUDAD_PROCEDENCIA VARCHAR(45) NOT NULL,
+  CORREO_ELECTRONICO VARCHAR(45) NOT NULL
+);
+
+
+-- -----------------------------------------------------
+-- Table `dbnexos`.`LIBRO`
+-- -----------------------------------------------------
+CREATE TABLE LIBRO (
+  ID_LIBRO INT NOT NULL PRIMARY KEY,
+  TITULO VARCHAR(45) NOT NULL,
+  AÑO INT NOT NULL,
+  PAGINAS INT NOT NULL,
+  ID_EDITORIAL BIGINT NOT NULL FOREIGN KEY REFERENCES EDITORIAL(ID_EDITORIAL),
+  ID_AUTOR BIGINT NOT NULL FOREIGN KEY REFERENCES AUTOR(ID_AUTOR)
+ );

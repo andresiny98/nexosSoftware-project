@@ -1,0 +1,23 @@
+<div class="row row-cols-1 row-cols-md-3 g-4 m-5 animated fadeIn">
+  <div *ngFor="let item of items" class="col">
+    <div class="card h-100 puntero text-center">
+      <img src="../assets/img/logo2.png" class="card-img-top imglib" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">
+          {{ item.titulo | uppercase }}
+        </h5>
+        <p>{{item.paginas}} paginas</p>
+      </div>
+      <div class="card-footer">
+        <p><b>Editorial:</b> {{item.editorial | uppercase}}</p>
+        <p><b>Año:</b> {{item.year}}</p>
+      </div>
+
+      <div class="card-footer">
+        <div class="autor">
+          <b>Autor:</b> <span class="autor"> {{ item.nombre | capitalizado}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid m-3">
+    <a class="navbar-brand" [routerLink]="['home']">
+      <img src="../assets/img/logo.png" alt="" width="100" class="d-inline-block align-text-top">
+
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" [routerLink]="['home']"
+          routerLinkActive="router-link-active" (click)="reloadCurrentPage()">Home</a>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+          <input #termino (keyup)="searchLibro(termino.value)" class="form-control me-5" type="search"
+            placeholder="Buscar libro" aria-label="Search">
+      </form>
+    </div>
+  </div>
+</nav>

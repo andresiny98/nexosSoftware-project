@@ -1,0 +1,13 @@
+<app-navbar (propagar)="recibeSearch($event)"></app-navbar>
+<div class="contanier">
+  <div *ngIf="estado" class="alert alert-danger d-flex justify-content-center col-6 m-5" role="alert">
+    No hay libros en la base de datos
+  </div>
+
+  <div *ngIf="buscando" class="alert alert-danger d-flex justify-content-center col-6 m-5" role="alert">
+    La busqueda no ha retornado ningun libro
+  </div>
+  <app-tarjetas [items]="items"></app-tarjetas>
+</div>
+
+<app-footer></app-footer>
