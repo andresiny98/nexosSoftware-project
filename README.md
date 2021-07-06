@@ -7,5 +7,5 @@
 #
 4-Todos los datos que recibe la API son obligatorios sino se genera exepción.
 #
-En la prueba tecnica solo se exigia que el frontend buscara libros.
+5-En la prueba tecnica solo se exigia que el frontend buscara libros.
 ![alt text](https://github.com/andresiny98/nexosSoftware-project/blob/main/Front.PNG)
